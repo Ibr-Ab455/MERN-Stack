@@ -5,6 +5,7 @@ import About from './pages/About'
 import LogIn from './pages/LogIn'
 import SignUp from './pages/SignUp'
 import Profile from './pages/Profile'
+import Navbar from './components/Navbar';
 
 function App() {
  
@@ -12,6 +13,7 @@ function App() {
   return (
     <> 
     <Router>
+     <Navbar/>
     <Routes>
       <Route path='/' element={<Home/>} />
       <Route path='/about' element={<About/>}/>
